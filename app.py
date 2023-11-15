@@ -5,7 +5,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:S@thya999@localhost/cdb1'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:password@localhost/cdb1'
 db = SQLAlchemy(app)
 
 class Criminal(db.Model):
